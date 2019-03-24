@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_centerVertical="true"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/hmenon"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sombrinha"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageView" />
+    <EditText
+        android:id="@+id/edtNameEditPassword"
+        android:password="true"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha Atual"
+        android:singleLine="true"/>
+    <EditText
+        android:id="@+id/edtNameEdit"
+        android:hint="Novo Nome (mínimo 4 caracteres)"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNameEditPassword"
+        android:singleLine="true"/>
+
+
+    <EditText
+        android:id="@+id/edtConfirmNameEdit"
+        android:hint="Confirme Novo Nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNameEdit"
+        android:singleLine="true"
+        />
+    <Button
+        android:id="@+id/btnConfirmEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIRMAR"
+        android:layout_marginTop="30dp"
+        android:enabled="false"
+        android:layout_below="@+id/edtConfirmNameEdit"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+
+</RelativeLayout>
